@@ -1,0 +1,1 @@
+1234567899	User1	Aadhar	21	M	2	Gujarat	202288/02User112	Ahmedabad	Nadiad	2022/8/8	9:52:50	2	11	12	400	6	Gujarat	202288/06User12	Ahmedabad	Dakor	2022/8/8	10:55:13	2	1	2	800	

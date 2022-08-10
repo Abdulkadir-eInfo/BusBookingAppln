@@ -1,0 +1,22 @@
+# It allows the formatter to identify language specific syntax such as C++ classes, templates, and keywords;  C type files are C, C++, C++/CLI, and Objective-C
+--mode=c
+# Display optional information, such as release number, date, option file locations, and statistical data
+--verbose
+# Do not retain a backup of the original file. The original file is purged after it is formatted
+--suffix=none
+# Allman style uses broken braces
+--style=allman
+# defualt indent
+--indent=spaces=4
+# Indent 'class' and 'struct' blocks so that the entire block is indented
+--indent-classes
+# Indent 'switch' blocks so that the 'case X:' statements are indented in the switch block. The entire case block is indented
+--indent-switches
+# Indent preprocessor blocks at brace level zero and immediately within a namespace
+--indent-preproc-block
+# Insert space padding around operators. This will also pad commas
+--pad-oper
+# Insert space padding between a header (e.g. 'if', 'for', 'while'...) and the following paren
+--pad-header
+# Attach a pointer or reference operator (*, &, or ^) to variable name (right).
+--align-pointer=name

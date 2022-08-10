@@ -5,7 +5,7 @@
 
 ### * Various Features are:
 #### -> For Vendor
-#####       - [Add Buses]
+#####       - [Add Buses](#add-buses)
 #####       - View Bus List
 #####       - View current Bookings
 ####  -> For Users

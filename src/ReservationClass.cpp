@@ -399,9 +399,9 @@ string ReservationClass::BookTicket(UserDetails User_info)
     int matched_buses = 0, boarding_point_found_flag;
     cout << "Booking Tickets for Passenger" << endl;
     cout << "From location: ";
-    cin >> passenger_obj.boarding_point;
+    getline(cin >> ws, passenger_obj.boarding_point);
     cout << "To location: ";
-    cin >> passenger_obj.dropoff_point;
+    getline(cin >> ws, passenger_obj.dropoff_point);
 
     cout << "Following buses routes matches your boarding/dropoff point:" << endl;
     for (auto bus_info : bus_map)

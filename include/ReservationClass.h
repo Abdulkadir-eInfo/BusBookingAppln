@@ -30,6 +30,7 @@ class ReservationClass: private UserClass, private VendorClass
         std::string tid = std::to_string(now->tm_year + 1900) + std::to_string(now->tm_mon + 1) + std::to_string(now->tm_mday) + "/";
         void SaveReservationToFile(); // Function that saves reservation data to the txt file
         int ReservationCount(); // Returns count of the Reserved tickets
+        std::string timeConversion(std::string); // Converts time from 10:00AM format to 24-hour format 10:00
 
     public:
         ReservationClass(); // Constructor that loads all the Current Reservations from the txt file into the Reserve Map
@@ -47,8 +48,6 @@ class ReservationClass: private UserClass, private VendorClass
 
         virtual bool SaveUserBookingstoUserFile(std::string, ReservationDetails); // Save Bookings details of users into seperate txt file and return status of saving
 
-
-        virtual std::string timeConversion(std::string); // Converts time from 10:00AM format to 24-hour format 10:00
         virtual bool IsFemaleReservation(std::string, std::string); // Checks whether the current time is 2 hours before the departure time; if satisfies Female_Reservation is On and returns true
 
         virtual std::string BookTicket(UserDetails); // Book a ticket for User

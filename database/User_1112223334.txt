@@ -1,1 +1,1 @@
-1112223334	User2	Aadhar	25	F	7	Gujarat	202288/07User22	Dakor	Ahmedabad	2022/8/8	11:4:12	2	1	2	600	
+1112223334	User2	Aadhar	25	F	7	Gujarat	202288/07User22	Dakor	Ahmedabad	2022/8/8	11:4:12	2	1	2	600	5	Gujarat	2022816/05User22	Godhra	Ahmedabad	2022/8/16	15:19:11	2	1	2	1000	

@@ -38,13 +38,13 @@ class ReservationClass: private UserClass, private VendorClass
         std::map<std::string, struct ReservationDetails> Reserve; // Map that maps ticketid with the ReservationDetails struct
 
         virtual bool initBuses(); // Takes input from the user and calls the addbus() of the parent class
-        int BusList() override;  // Show all the buses from the bus_map
-        int ReservationList() override; // Displays all the reservation in the system
+        virtual int BusList() override;  // Show all the buses from the bus_map
+        virtual int ReservationList() override; // Displays all the reservation in the system
         virtual bool ShowCurrentUserBookings(std::string); // Show current bookings made by the User
 
-        UserDetails RegisterUser(std::string) override; // Member function that registers a new user, creates a file for storing bookings for that User
-        UserDetails LoadUserDetails(std::string) override; // Member function that loads the user info from txt file and returns the structure
-        bool isUserPresent(std::string) override; // Checks whether User Data is present in map or not
+        virtual UserDetails RegisterUser(std::string) override; // Member function that registers a new user, creates a file for storing bookings for that User
+        virtual UserDetails LoadUserDetails(std::string) override; // Member function that loads the user info from txt file and returns the structure
+        virtual bool isUserPresent(std::string) override; // Checks whether User Data is present in map or not
 
         virtual bool SaveUserBookingstoUserFile(std::string, ReservationDetails); // Save Bookings details of users into seperate txt file and return status of saving
 

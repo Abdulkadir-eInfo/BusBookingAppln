@@ -6,7 +6,6 @@ using namespace std;
 // Shared_ptr for ReservationClass that will be automatically destroyed on program termination or end
 shared_ptr<ReservationClass> Res_ptr = make_shared<ReservationClass>();
 
-
 // Signal Handler function that copies all the txt files to database
 void signalHandler(int signum)
 {

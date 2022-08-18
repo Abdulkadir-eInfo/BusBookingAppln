@@ -36,7 +36,6 @@ TEST_FIXTURE(TestClass, FreeSeatTest)
     CHECK_EQUAL(ptr->FreeSeat(1, 21), true);
 }
 
-
 TEST_FIXTURE(TestClass, BusListTest)
 {
     cout << "\nTesting BusList()" << endl;

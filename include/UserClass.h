@@ -17,7 +17,6 @@ struct UserDetails
 };
 #pragma pack(pop) //back to whatever the previous packing mode was
 
-
 enum class Userchoice
 {
     BOOKTICKET = 1,
@@ -29,7 +28,6 @@ enum class Userchoice
     SWITCHTOMAIN
 
 };
-
 
 class UserClass
 {
@@ -43,13 +41,13 @@ class UserClass
 
         virtual UserDetails getUserDetails(std::string);
 
-        virtual UserDetails RegisterUser(std::string) = 0; // Virtual function that will be defined in the inherited reservation class
-        virtual UserDetails LoadUserDetails(std::string) = 0; // Virtual function that will be defined in the inherited reservation class
-        virtual bool isUserPresent(std::string) = 0; // Checks whether User Data is present in map or not
+        virtual UserDetails RegisterUser(std::string) = 0; // Pure Virtual function that will be defined in the inherited reservation class
+        virtual UserDetails LoadUserDetails(std::string) = 0; // Pure Virtual function that will be defined in the inherited reservation class
+        virtual bool isUserPresent(std::string) = 0; // Pure Checks whether User Data is present in map or not
 
         std::map<std::string, struct UserDetails > Users_map; // Map of User Mobile No.to struct UserDetails
 
-        virtual int ReservationList() = 0; // Virtual function that will be defined in the inherited reservation class
+        virtual int ReservationList() = 0; // Pure Virtual function that will be defined in the inherited reservation class
 
 };
 

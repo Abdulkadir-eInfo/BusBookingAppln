@@ -44,5 +44,8 @@ target_link_libraries(TestVendor PRIVATE UnitTest++ Vendor)
 add_executable(TestUser tests/TestUser.cpp)
 target_link_libraries(TestUser PRIVATE UnitTest++ User)
 
+add_executable(TestReservation tests/TestReservation.cpp)
+target_link_libraries(TestReservation PRIVATE UnitTest++ Reservation)
+
 add_executable(BusAPP main.cpp)
 target_link_libraries(BusAPP PRIVATE Reservation)

@@ -22,5 +22,5 @@
 ####  -> We are Using files that keeps record of Buses, Reservations, Users, Users_Reservations that allows us to make an application that is datawise consistent i.e. at the program end/ termination all data gets copied into the files and at the starting of application all the data is loaded from these files into various Templates libraries and Structures.
 
 ###  -> Concepts that were used in the development:
-#####   - STL(map, vector); File Operations; Structures; enum Class; Range-based for loops;  Virtual functions; CMake implmentations
+#####   - STL(maps); File Operations; Structures; enum Class; Range-based for loops;  Virtual functions; CMake implmentations
 #####   - Inheritance; Shared Smart Pointer; Signal handling; Unittest++; Mock Classes; Astyle formatting and many more

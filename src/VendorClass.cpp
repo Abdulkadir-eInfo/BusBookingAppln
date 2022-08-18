@@ -45,7 +45,7 @@ VendorClass::VendorClass()
                 bus.seats[stoi(reserved_seat)] = true;
             }
             int bno = stoi(bus.no);
-            // Inserting the individual busdetails structure mapped to the bus_no into the bus_map
+            // Inserting the individual busdetails structure mapped to the bus_no into bus_map
             bus_map.insert(pair<int, struct BusDetails>(bno, bus));
         }
     }

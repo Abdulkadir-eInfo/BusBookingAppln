@@ -35,7 +35,7 @@ class ReservationClass: private UserClass, private VendorClass
     public:
         ReservationClass(); // Constructor that loads all the Current Reservations from the txt file into the Reserve Map
         ~ReservationClass(); // Destructor that Saves the reservatiosn from the Reserve map into the txt file
-        std::map<std::string, struct ReservationDetails> Reserve; // Map that maps ticketid with the ReservationDetails struct
+        std::map<std::string, ReservationDetails> Reserve; // Map that maps ticketid with the ReservationDetails struct
 
         virtual bool initBuses(); // Takes input from the user and calls the addbus() of the parent class
         virtual int BusList() override;  // Show all the buses from the bus_map

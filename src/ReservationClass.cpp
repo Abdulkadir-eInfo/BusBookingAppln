@@ -53,7 +53,7 @@ ReservationClass::ReservationClass()
                     getline(file_read, temp, '\t');
                     obj.ticket_cost = stoi(temp);
                     // Insert the reservation detail mapped with the ticket_id of reservation into Reserve map
-                    Reserve.insert(pair<string, struct ReservationDetails>(obj.ticket_id, obj));
+                    Reserve.insert(pair<string, ReservationDetails>(obj.ticket_id, obj));
                 }
             }
         }
@@ -546,7 +546,7 @@ string ReservationClass::BookTicket(UserDetails User_info)
         passenger_obj.booking_date = to_string(now->tm_year + 1900) + "/" + to_string(now->tm_mon + 1) + "/" + to_string(now->tm_mday);
         passenger_obj.booking_time = to_string(now->tm_hour) + ":" + to_string(now->tm_min) + ":" + to_string(now->tm_sec);
         // Insert the Ticket_id, Reservationdetails pair into the Reserve map
-        Reserve.insert(pair<string, struct ReservationDetails>(passenger_obj.ticket_id, passenger_obj));
+        Reserve.insert(pair<string, ReservationDetails>(passenger_obj.ticket_id, passenger_obj));
         cout << "Your ticket is booked, your fare is: " << passenger_obj.ticket_cost << ", Plz pay the fare via UPI or Cash" << endl;
         // Update the Userfile that maintains the User Bookings history
         SaveUserBookingstoUserFile(User_info.mobileno, passenger_obj);

@@ -23,7 +23,7 @@ VendorClass::VendorClass()
         while ( getline(file_read, bus_no, '\t') )
         {
             // Getting details of each bus from the file into the structure
-            struct BusDetails bus;
+            BusDetails bus;
             bus.no = bus_no;
             getline(file_read, bus.vendor_name, '\t');
             getline(file_read, bus.from, '\t');
@@ -46,7 +46,7 @@ VendorClass::VendorClass()
             }
             int bno = stoi(bus.no);
             // Inserting the individual busdetails structure mapped to the bus_no into bus_map
-            bus_map.insert(pair<int, struct BusDetails>(bno, bus));
+            bus_map.insert(pair<int, BusDetails>(bno, bus));
         }
     }
     catch (const ifstream::failure &e)

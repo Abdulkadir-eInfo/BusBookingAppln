@@ -11,7 +11,7 @@
 ####  -> For Users
 #####   - Register as User (Only registered Users are able to see main menu for Users)
 #####   - Book Ticket by entering From and To location
-#####   - Few Seats are allocated that can be booked by Females only; these seats gets open to book for all before specified time e.x. 2 hours before departure of b
+#####   - Few Seats are allocated that can be booked by Females only; these seats gets open to book for all before specified time e.x. 2 hours before departure of bus
 #####   - View Current Bookings made by a User
 #####   - View all Bookings made by the User(a record of all the bookings made by the User is maintained)
 #####   - Cancel Ticket

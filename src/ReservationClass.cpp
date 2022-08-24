@@ -403,7 +403,6 @@ string ReservationClass::BookTicket(UserDetails User_info)
     cout << "To location: ";
     getline(cin >> ws, passenger_obj.dropoff_point);
 
-    cout << "Following buses routes matches your boarding/dropoff point:" << endl;
     for (auto bus_info : bus_map)
     {
         boarding_point_found_flag = 0;
@@ -418,6 +417,10 @@ string ReservationClass::BookTicket(UserDetails User_info)
             if (bus_info.second.buspoint[x] == passenger_obj.dropoff_point && boarding_point_found_flag)
             {
                 matched_buses++;
+                if(matched_buses==1)
+                {
+                    cout << "Following buses routes matches your boarding/dropoff point:" << endl;
+                }
                 cout << "\nBus No: " << bus_info.second.no << "\t\tVendor: " << bus_info.second.vendor_name << "\nFrom: " << bus_info.second.from << "\t\tTo:" << bus_info.second.to << "\nDeparture: " << bus_info.second.departure << "\tArrival: " << bus_info.second.arrival << "\nBusPoints: " << bus_info.second.buspoints_count << "\n";
                 for (int i = 0; i < bus_info.second.buspoints_count; i++)
                 {
@@ -554,7 +557,7 @@ string ReservationClass::BookTicket(UserDetails User_info)
     }
     else
     {
-        cout << "No matching buses found" << endl;
+        cout << "\nNo matching buses found" << endl;
         return "SORRY";
     }
     return "0";
